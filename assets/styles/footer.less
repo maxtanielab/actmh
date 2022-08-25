@@ -1,0 +1,35 @@
+.footer {
+	padding: 40px 0;
+	background-color: #0094b4;
+	color: #fff;
+	text-align: center;
+
+	.nav-link-footer {
+		color: #fff;
+		transition: color 0.3s ease-in-out;
+
+		&:hover {
+			color: #e1faff;
+		}
+	}
+
+	.horizontal-line {
+		width: 100%;
+		border: 1px solid rgba(204, 204, 204, 0.42);
+		margin-top: 45px;
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: 768px) {
+		.menu-footer {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		.nav-link-footer {
+			padding: 0 30px;
+			font-size: 15px;
+		}
+	}
+}

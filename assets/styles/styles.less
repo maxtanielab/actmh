@@ -1,0 +1,199 @@
+@import "./reset.less";
+@import "./nav.less";
+@import "./header.less";
+@import "./horizontal-carousel.less";
+@import "./footer.less";
+
+@import "https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Sansita+Swashed:wght@600&display=swap";
+
+// Variables
+@blueDark: #0094b4;
+@lightOrange: #f74e02;
+@sansitaFont: "Sansita Swashed";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+	font-family: "roboto";
+}
+
+body {
+	overflow-x: hidden;
+}
+
+// Default style
+.d-flex {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.flex,
+.flex-header {
+	display: flex;
+	flex-direction: row;
+}
+
+.container2 {
+	@media (max-width: 450px) {
+		max-width: 330px;
+	}
+}
+
+.space-between {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sansitaFont {
+	font-family: @sansitaFont;
+}
+
+@media (max-width: 1024px) {
+	.flex-header {
+		flex-direction: column;
+	}
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.gap-30 {
+	gap: 30px;
+
+	@media (max-width: 768px) {
+		gap: 20px;
+	}
+}
+
+.items-center {
+	align-items: center;
+}
+
+.orange {
+	color: @lightOrange;
+}
+
+.wrapper {
+	max-width: 1100px;
+}
+
+.buttons {
+	@media (max-width: 280px) {
+		flex-direction: column;
+		margin-top: 40px !important;
+	}
+}
+
+.btn {
+	width: 229px;
+	height: 51px;
+	display: block;
+	text-align: center;
+	line-height: 51px;
+	text-decoration: none;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "roboto semibold";
+
+	@media (max-width: 768px) {
+		width: 171px;
+		height: 40px;
+		font-size: 11px;
+		line-height: 40px;
+	}
+}
+
+.btn-fill {
+	background-color: @lightOrange;
+	color: #fff;
+}
+
+.btn-stroke {
+	position: relative;
+	border: 1px solid @blueDark;
+	color: @blueDark;
+	overflow: hidden;
+	z-index: 12;
+	transition: all 0.5s ease-in-out;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border: 1px solid @blueDark;
+		background: @blueDark;
+		border-radius: 50px 0 0 50px;
+		z-index: -10;
+		width: 0;
+		opacity: 0;
+		transition: width 0.5s ease-in-out;
+	}
+
+	&:hover&::after {
+		width: 100%;
+		opacity: 1;
+		border-radius: 50px;
+	}
+
+	&:hover {
+		color: #fff;
+		transition: width 0.5s ease-in-out;
+	}
+}
+
+.btn-stroke-orange {
+	position: relative;
+	border: 1px solid @lightOrange;
+	color: @lightOrange;
+	overflow: hidden;
+	z-index: 12;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border: 1px solid @lightOrange;
+		background: @lightOrange;
+		border-radius: 50px 0 0 50px;
+		z-index: -10;
+		width: 0;
+		opacity: 0;
+		transition: width 0.5s ease-in-out;
+	}
+	&:hover&::after {
+		width: 120%;
+		opacity: 1;
+		border-radius: 50px;
+	}
+	&:hover {
+		color: #fff;
+		transition: width 0.5s ease-in-out;
+	}
+}
+
+.hr-scroll {
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.vr-scroll {
+	cursor: url("https://www.pngmart.com/files/13/Christmas-Kitten-Transparent-Background.png"),
+		20px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.vr-scroll::-webkit-scrollbar,
+.hr-scroll::-webkit-scrollbar {
+	visibility: hidden;
+}
