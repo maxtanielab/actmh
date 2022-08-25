@@ -128,7 +128,7 @@
 }
 @media (max-width: 540px) {
   .right-content {
-    max-width: 300px;
+    max-width: 350px;
     padding: 40px 20px !important;
   }
 }
@@ -170,5 +170,6 @@
 @media (max-width: 280px) {
   .right-content .title {
     font-size: 25px;
+    max-width: 320px;
   }
 }
