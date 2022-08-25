@@ -4,7 +4,7 @@
 @import "./horizontal-carousel.less";
 @import "./footer.less";
 
-@import "https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Sansita+Swashed:wght@600&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto&family=Sansita+Swashed:wght@600&display=swap");
 
 // Variables
 @blueDark: #0094b4;
@@ -24,7 +24,8 @@ html {
 }
 
 body {
-	overflow-x: hidden;
+	overflow-x: hidden !important;
+	font-family: "Roboto", sans-serif;
 }
 
 // Default style
@@ -87,7 +88,7 @@ body {
 }
 
 .buttons {
-	@media (max-width: 280px) {
+	@media (max-width: 450px) {
 		flex-direction: column;
 		margin-top: 40px !important;
 	}
