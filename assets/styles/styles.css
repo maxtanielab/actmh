@@ -206,7 +206,7 @@ a img {
 }
 .vertical-carousel {
   width: 450px;
-  height: 547px;
+  height: 530px;
   padding: 20px;
 }
 @media (max-width: 768px) {
@@ -243,11 +243,14 @@ a img {
 .vertical-carousel .carousel-card:nth-child(odd) {
   transform: rotate(-4.31deg);
 }
-.vertical-carousel .carousel-card img {
+.vertical-carousel .carousel-card .imgs {
   width: 100%;
   max-width: 100%;
-  height: 100%;
-  display: block;
+  height: 182px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
 }
 .carousel-card.active {
   opacity: 1;
@@ -433,7 +436,7 @@ a img {
   }
 }
 .cute-cats .buttons {
-  margin-top: 62px;
+  margin-top: 40px;
 }
 @media (max-width: 450px) {
   .cute-cats .buttons {
@@ -481,36 +484,6 @@ a img {
   color: #0094b4;
   margin: 0 20px;
   overflow: hidden;
-}
-.slick-slider .carousel-card .img {
-  width: 100%;
-  height: 231px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0;
-}
-@media (max-width: 320px) {
-  .slick-slider .carousel-card {
-    max-width: 270px;
-    padding: 15px;
-    height: 388px;
-  }
-  .slick-slider .carousel-card .img {
-    height: 211px;
-  }
-}
-.slick-slider .carousel-card .img1 {
-  background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
-}
-.slick-slider .carousel-card .img2 {
-  background-image: url("https://www.santevet.com/upload/admin/images/article/chaton%20adoption.jpg");
-}
-.slick-slider .carousel-card .img3 {
-  background-image: url("https://franc-info.com/wp-content/uploads/2022/03/260831505_129138119528928_1659459880283063327_n-e1648031165748.jpg");
-}
-.slick-slider .carousel-card .img4 {
-  background-image: url("https://miaustore.com/fr/wp-content/uploads/sites/2/2018/03/preview101.jpg");
 }
 .slick-slider .carousel-card .cat-description {
   margin-top: 25px;
@@ -575,6 +548,34 @@ a img {
   .slick-next {
     right: 8px;
   }
+}
+.img {
+  width: 100%;
+  height: 231px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+@media (max-width: 320px) {
+  max-width: 270px;
+  padding: 15px;
+  height: 388px;
+  .img {
+    height: 211px;
+  }
+}
+.img1 {
+  background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
+}
+.img2 {
+  background-image: url("https://www.santevet.com/upload/admin/images/article/chaton%20adoption.jpg");
+}
+.img3 {
+  background-image: url("https://franc-info.com/wp-content/uploads/2022/03/260831505_129138119528928_1659459880283063327_n-e1648031165748.jpg");
+}
+.img4 {
+  background-image: url("https://miaustore.com/fr/wp-content/uploads/sites/2/2018/03/preview101.jpg");
 }
 .footer {
   padding: 40px 0;
