@@ -171,9 +171,9 @@
     line-height: 1.3;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 450px) {
   .right-content .title {
-    font-size: 25px;
+    font-size: 30px;
     max-width: 320px;
   }
 }
