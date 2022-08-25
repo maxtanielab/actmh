@@ -128,6 +128,7 @@
 }
 @media (max-width: 540px) {
   .right-content {
+    max-width: 300px;
     padding: 40px 20px !important;
   }
 }

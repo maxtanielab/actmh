@@ -334,6 +334,7 @@ a img {
 }
 @media (max-width: 540px) {
   .right-content {
+    max-width: 300px;
     padding: 40px 20px !important;
   }
 }
@@ -633,7 +634,7 @@ a img {
 body,
 html {
   scroll-behavior: smooth;
-  font-family: "roboto";
+  font-family: "roboto" !important;
 }
 body {
   overflow-x: hidden !important;
@@ -689,7 +690,7 @@ body {
 }
 @media (max-width: 450px) {
   .buttons {
-    flex-direction: column;
+    flex-direction: column !important;
     margin-top: 40px !important;
   }
 }
