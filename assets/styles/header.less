@@ -24,8 +24,11 @@
 		height: 241px;
 		background-color: #fff;
 		padding: 25px;
+		-webkit-box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
 		box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
 		opacity: 0.6;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-o-transition: opacity 0.3s ease-in-out;
 		transition: opacity 0.3s ease-in-out;
 
 		@media (max-width: 450px) {
@@ -34,10 +37,14 @@
 		}
 
 		&:nth-child(even) {
+			-webkit-transform: rotate(4.31deg);
+			-ms-transform: rotate(4.31deg);
 			transform: rotate(4.31deg);
 		}
 
 		&:nth-child(odd) {
+			-webkit-transform: rotate(-4.31deg);
+			-ms-transform: rotate(-4.31deg);
 			transform: rotate(-4.31deg);
 		}
 
@@ -58,7 +65,12 @@
 }
 
 .controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 50px;
 
@@ -74,6 +86,8 @@
 		background-color: #8cddee;
 		opacity: 0.5;
 		z-index: 99;
+		-webkit-transition: opacity 0.3s linear;
+		-o-transition: opacity 0.3s linear;
 		transition: opacity 0.3s linear;
 
 		i {
@@ -82,7 +96,11 @@
 			text-align: center;
 			line-height: 45px;
 			color: #fff;
+			-webkit-transition: color 0.4s linear;
+			-o-transition: color 0.4s linear;
 			transition: color 0.4s linear;
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
 			transform: scale(1);
 		}
 
@@ -98,6 +116,8 @@
 
 		&.active {
 			background-color: #f74e02;
+			-webkit-transition: opacity 0.3s ease;
+			-o-transition: opacity 0.3s ease;
 			transition: opacity 0.3s ease;
 			opacity: 1;
 		}
@@ -110,6 +130,8 @@
 			background: #fff;
 			top: 45px;
 			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
 			transform: translateX(-50%);
 
 			@media (max-width: 450px) {
@@ -128,6 +150,8 @@
 
 // Header left content
 .left-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	background-color: #07b4d9;
 	padding: 40px;
@@ -140,9 +164,14 @@
 
 // Header right content
 .right-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	background-color: #fff;
 	padding: 140px 70px;
+	background-image: url("https://cdn.wallpapersafari.com/88/24/uqjWGB.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	@media (max-width: 540px) {
 		max-width: 350px;
@@ -154,8 +183,14 @@
 		max-width: 437px;
 		line-height: 1.5;
 		color: @blueDark;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
 		transform: scale(1);
+		-webkit-transition: -webkit-transform 0.3s ease;
+		transition: -webkit-transform 0.3s ease;
+		-o-transition: transform 0.3s ease;
 		transition: transform 0.3s ease;
+		transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 
 		@media (max-width: 768px) {
 			max-width: 350px;
