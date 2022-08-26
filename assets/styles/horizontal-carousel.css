@@ -72,16 +72,17 @@
 .slick-slider {
   position: relative;
   max-width: 1146px;
-  margin-top: -200px;
+  width: 80%;
+  margin-top: -210px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .slick-slider {
-    max-width: 768px;
+    max-width: 1000px;
   }
 }
 @media (max-width: 468px) {
   .slick-slider {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 @media (max-width: 320px) {
@@ -97,7 +98,7 @@
 }
 .slick-slider .carousel-card {
   width: 340px;
-  height: 452px;
+  height: 462px;
   background-color: #fff;
   border: 5px solid #e2f7fc;
   border-radius: 11px;

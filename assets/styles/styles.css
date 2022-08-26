@@ -137,7 +137,7 @@ a img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .nav {
     height: 52px;
   }
@@ -153,7 +153,7 @@ a img {
 .nav .wrapper .logo img {
   width: 80px;
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .nav .wrapper .logo img {
     height: 55px;
   }
@@ -165,7 +165,7 @@ a img {
   color: #0094b4;
   display: none;
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .nav .wrapper .responsive-menu {
     display: block;
   }
@@ -189,7 +189,7 @@ a img {
 .nav .wrapper .menu .nav-link:hover {
   color: orangered;
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .nav .wrapper .menu {
     position: absolute;
     inset: 0;
@@ -203,13 +203,13 @@ a img {
     -o-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    background: #fff;
-    height: 100vh;
-    z-index: 99999;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    background: #fff;
+    height: 100vh;
+    z-index: 99999;
     gap: 25px;
   }
 }
@@ -366,7 +366,7 @@ a img {
 @media (max-width: 450px) {
   .left-content {
     padding: 10px;
-    height: 265px;
+    height: 285px;
   }
 }
 .right-content {
@@ -375,11 +375,8 @@ a img {
   flex: 1;
   background-color: #fff;
   padding: 140px 70px;
-  background-image: url("https://cdn.wallpapersafari.com/88/24/uqjWGB.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-@media (max-width: 540px) {
+@media (max-width: 1024px) {
   .right-content {
     max-width: 350px;
     margin: auto;
@@ -507,16 +504,17 @@ a img {
 .slick-slider {
   position: relative;
   max-width: 1146px;
-  margin-top: -200px;
+  width: 80%;
+  margin-top: -210px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .slick-slider {
-    max-width: 768px;
+    max-width: 1000px;
   }
 }
 @media (max-width: 468px) {
   .slick-slider {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 @media (max-width: 320px) {
@@ -532,7 +530,7 @@ a img {
 }
 .slick-slider .carousel-card {
   width: 340px;
-  height: 452px;
+  height: 462px;
   background-color: #fff;
   border: 5px solid #e2f7fc;
   border-radius: 11px;
@@ -755,7 +753,7 @@ body {
 .sansitaFont {
   font-family: "Sansita Swashed";
 }
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .flex-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

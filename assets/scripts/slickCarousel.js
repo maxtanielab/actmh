@@ -6,24 +6,24 @@ export const slider = $(".slick-slider").slick({
 	autoplaySpeed: 3000,
 	responsive: [
 		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 780,
+			breakpoint: 1100,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
 			}
 		},
 		{
-			breakpoint: 400,
+			breakpoint: 768,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 500,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
 			}
 		}
 	],

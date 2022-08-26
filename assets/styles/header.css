@@ -145,7 +145,7 @@
 @media (max-width: 450px) {
   .left-content {
     padding: 10px;
-    height: 265px;
+    height: 285px;
   }
 }
 .right-content {
@@ -154,11 +154,8 @@
   flex: 1;
   background-color: #fff;
   padding: 140px 70px;
-  background-image: url("https://cdn.wallpapersafari.com/88/24/uqjWGB.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-@media (max-width: 540px) {
+@media (max-width: 1024px) {
   .right-content {
     max-width: 350px;
     margin: auto;
