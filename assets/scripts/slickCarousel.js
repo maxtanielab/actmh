@@ -6,7 +6,7 @@ export const slider = $(".slick-slider").slick({
 	slidesToScroll: 1,
 	responsive: [
 		{
-			breakpoint: 1024,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1

@@ -54,7 +54,7 @@
 @media (max-width: 480px) {
   .cute-cats .container {
     height: 209px;
-    margin-top: 220px;
+    margin-top: 215px;
   }
 }
 .cute-cats .buttons {
@@ -81,15 +81,16 @@
   width: 90%;
   margin-top: -210px;
 }
-@media (max-width: 480px) {
-  .slick-slider {
-    margin-top: -178px;
-  }
-}
-@media (max-width: 480px) and (min-width: 768px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .slick-slider {
     width: 100%;
     margin-top: -250px;
+  }
+}
+@media (max-width: 320px) {
+  .slick-slider {
+    width: 100%;
+    margin-top: -178px;
   }
 }
 .slick-slider button {
@@ -119,6 +120,7 @@
 @media (max-width: 320px) {
   .slick-slider .carousel-card {
     max-width: 270px;
+    width: 100%;
     padding: 15px;
     height: 388px;
   }
@@ -168,6 +170,7 @@
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
+    margin-top: 15px;
   }
 }
 .btn-arrow {
