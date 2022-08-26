@@ -16,6 +16,8 @@
 	}
 
 	.sub-title {
+		max-width: 90%;
+		margin: auto;
 		font-size: 25px;
 		font-family: @sansitaFont;
 		color: @blueDark;
@@ -50,9 +52,9 @@
 		background: @lightOrange;
 		margin-top: 300px;
 
-		@media (max-width: 540px) {
+		@media (max-width: 480px) {
 			height: 209px;
-			margin-top: 230px;
+			margin-top: 220px;
 		}
 	}
 
@@ -73,22 +75,35 @@
 
 .slick-slider {
 	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	max-width: 1146px;
-	width: 80%;
+	width: 90%;
 	margin-top: -210px;
 
-	@media (min-width: 768px) {
-		max-width: 1000px;
+	@media (max-width: 480px) {
+		margin-top: -178px;
 	}
 
-	@media (max-width: 468px) {
-		max-width: 450px;
+	@media (max-width: 480px) and (min-width: 768px) {
+		width: 100%;
+		margin-top: -250px;
 	}
 
-	@media (max-width: 320px) {
-		max-width: 280px;
-		margin-top: -179px;
-	}
+	// @media (min-width: 768px) {
+	// 	max-width: 1000px;
+	// }
+
+	// @media (max-width: 468px) {
+	// 	max-width: 450px;
+	// }
+
+	// @media (max-width: 320px) {
+	// 	max-width: 280px;
+	// 	margin-top: -179px;
+	// }
 
 	button {
 		position: absolute;

@@ -13,6 +13,8 @@
   }
 }
 .cute-cats .sub-title {
+  max-width: 90%;
+  margin: auto;
   font-size: 25px;
   font-family: "Sansita Swashed";
   color: #0094b4;
@@ -49,10 +51,10 @@
   background: #f74e02;
   margin-top: 300px;
 }
-@media (max-width: 540px) {
+@media (max-width: 480px) {
   .cute-cats .container {
     height: 209px;
-    margin-top: 230px;
+    margin-top: 220px;
   }
 }
 .cute-cats .buttons {
@@ -71,24 +73,23 @@
 }
 .slick-slider {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: 1146px;
-  width: 80%;
+  width: 90%;
   margin-top: -210px;
 }
-@media (min-width: 768px) {
+@media (max-width: 480px) {
   .slick-slider {
-    max-width: 1000px;
+    margin-top: -178px;
   }
 }
-@media (max-width: 468px) {
+@media (max-width: 480px) and (min-width: 768px) {
   .slick-slider {
-    max-width: 450px;
-  }
-}
-@media (max-width: 320px) {
-  .slick-slider {
-    max-width: 280px;
-    margin-top: -179px;
+    width: 100%;
+    margin-top: -250px;
   }
 }
 .slick-slider button {
