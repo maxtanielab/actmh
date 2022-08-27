@@ -168,22 +168,21 @@ $(".slick-slider").slick({
 // OVERLAY
 TweenMax.to(".first", 1, {
 	delay: 0.3,
-	top: "-100%",
+	top: "-150%",
 	ease: Expo.easeInOut
 });
 
 TweenMax.to(".second", 1.5, {
 	delay: 0.5,
-	top: "-100%",
+	top: "-150%",
 	ease: Expo.easeInOut
 });
 
 TweenMax.to(".third", 1.5, {
 	delay: 0.7,
-	top: "-100%",
+	top: "-150%",
 	ease: Expo.easeInOut
 });
-
 
 setTimeout(() => {
 	document.querySelector("body,html").style.overflow = "auto";
