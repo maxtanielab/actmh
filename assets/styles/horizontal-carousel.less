@@ -7,8 +7,8 @@
 	padding: 80px 0;
 	background-color: #e1faff;
 
-	@media (max-width: 768px) {
-		padding: 40px 0;
+	@media (min-width: 481px) and (max-width: 1179px) {
+		padding: 50px 0;
 	}
 
 	@media (max-width: 320px) {
@@ -52,9 +52,17 @@
 		background: @lightOrange;
 		margin-top: 300px;
 
+		@media (min-width: 481px) and (max-width: 1179px) {
+			margin-top: 241px;
+		}
+
 		@media (max-width: 480px) {
 			height: 209px;
 			margin-top: 215px;
+		}
+
+		@media (min-width: 321px) and (max-width: 768px) {
+			margin-top: 277px;
 		}
 	}
 
@@ -82,6 +90,10 @@
 	max-width: 1146px;
 	width: 90%;
 	margin-top: -210px;
+
+	@media (min-width: 481px) and (max-width: 1179px) {
+		margin-top: -173px;
+	}
 
 	@media (min-width: 321px) and (max-width: 480px) {
 		width: 100%;
@@ -112,7 +124,6 @@
 		bottom: 280px;
 	}
 	.carousel-card {
-		width: 340px;
 		// height: 462px;
 		background-color: #fff;
 		border: 5px solid #e2f7fc;
@@ -131,8 +142,13 @@
 			margin: 0;
 		}
 
+		@media (min-width: 481px) and (max-width: 1179px) {
+			margin: 0 10px;
+			padding: 15px;
+		}
+
 		@media (max-width: 320px) {
-			max-width: 270px;
+			max-width: 280px;
 			width: 100%;
 			padding: 15px;
 			height: 388px;
@@ -178,6 +194,10 @@
 		.buttons {
 			margin-top: 25px;
 
+			@media (min-width: 481px) and (max-width: 1179px) {
+				margin-top: 15px;
+			}
+
 			@media (max-width: 350px) {
 				-webkit-box-orient: vertical !important;
 				-webkit-box-direction: normal !important;
@@ -203,6 +223,10 @@
 	border-radius: 50px;
 	position: absolute;
 	top: 170px;
+
+	@media (min-width: 481px) and (max-width: 1179px) {
+		top: 140px;
+	}
 
 	@media (max-width: 320px) {
 		width: 40px;

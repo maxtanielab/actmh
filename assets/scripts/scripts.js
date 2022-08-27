@@ -74,6 +74,7 @@ circles.forEach((circle, index) => {
 
 		hide(circles, circle);
 		circle.classList.add("active");
+
 		verticalCarousel.scroll({
 			top:
 				carouselCard[index].offsetTop - carouselCard[index].offsetHeight + 64,
@@ -141,9 +142,10 @@ listMenu.forEach((list) => {
 
 //Slick horizontal carousel
 $(".slick-slider").slick({
-	infinite: false,
-	// autoplay: true,
-	autoplaySpeed: 3000,
+	infinite: true,
+	autoplay: true,
+	// variableWidth: true,
+	autoplaySpeed: 2000,
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	responsive: [

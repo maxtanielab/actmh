@@ -36,4 +36,7 @@
     padding: 0 30px;
     font-size: 15px;
   }
+  .footer .gap-30 {
+    gap: 20px;
+  }
 }
