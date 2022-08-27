@@ -16,7 +16,7 @@
 .footer .horizontal-line {
   width: 100%;
   border: 1px solid rgba(204, 204, 204, 0.42);
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
@@ -25,12 +25,12 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer .nav-link-footer {
     padding: 0 30px;

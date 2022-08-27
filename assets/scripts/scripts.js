@@ -1,55 +1,57 @@
-import { slider } from "./slickCarousel.js";
-
-const ele = document.getElementById("vertical-carousel");
-ele.style.cursor =
+const verticalCarousel = document.getElementById("vertical-carousel");
+verticalCarousel.style.cursor =
 	'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
 
-let pos = { top: 0, left: 0, x: 0, y: 0 };
+let position = { top: 0, left: 0, x: 0, y: 0 };
 
-const mouseDownHandler = function (e) {
-	ele.style.cursor =
+function mouseDownHandler(e) {
+	verticalCarousel.style.cursor =
 		'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
-	ele.style.userSelect = "none";
+	verticalCarousel.style.userSelect = "none";
 
-	pos = {
-		left: ele.scrollLeft,
-		top: ele.scrollTop,
-		// Get the current mouse position
+	position = {
+		// Get the current scrollLeft/Top
+		left: verticalCarousel.scrollLeft,
+		top: verticalCarousel.scrollTop,
+		// Get the current mouse positionition
 		x: e.clientX,
 		y: e.clientY
 	};
 
 	document.addEventListener("mousemove", mouseMoveHandler);
 	document.addEventListener("mouseup", mouseUpHandler);
-};
+}
 
-const mouseMoveHandler = function (e) {
+function mouseMoveHandler(e) {
 	// How far the mouse has been moved
-	const dx = e.clientX - pos.x;
-	const dy = e.clientY - pos.y;
+	const xDirection = e.clientX - position.x;
+	const yDirection = e.clientY - position.y;
 
 	// Scroll the element
-	ele.scrollTop = pos.top - dy;
-	ele.scrollLeft = pos.left - dx;
-};
+	verticalCarousel.scrollTop = position.top - yDirection;
+	verticalCarousel.scrollLeft = position.left - xDirection;
+}
 
-const mouseUpHandler = function () {
-	ele.style.cursor =
+function mouseUpHandler() {
+	verticalCarousel.style.cursor =
 		'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
-	ele.style.removeProperty("user-select");
+	verticalCarousel.style.removeProperty("user-select");
 
 	document.removeEventListener("mousemove", mouseMoveHandler);
 	document.removeEventListener("mouseup", mouseUpHandler);
-};
+}
 
 // Attach the handler
-ele.addEventListener("mousedown", mouseDownHandler);
+verticalCarousel.addEventListener("mousedown", mouseDownHandler);
+
+/*=================== Carousel vertical card =================== */
 
 const carouselCard = document.querySelectorAll(".left-content .carousel-card");
 // let cardHeight = carouselCard[0].offsetHeight;
 const circles = document.querySelectorAll(".left-content .controls .circle");
 let msg = document.getElementById("cat-msg");
 
+//Message of cats
 let catMsg = [
 	{
 		msg: "Je suis Katy, j’ai 2 ans et je suis née aveugle, mais j’aime beaucoup les câlins."
@@ -72,7 +74,7 @@ circles.forEach((circle, index) => {
 		hide(circles, circle);
 		this.classList.add("active");
 
-		ele.scroll({
+		verticalCarousel.scroll({
 			top: carouselCard[index].offsetTop,
 			behavior: "smooth"
 		});
@@ -80,7 +82,7 @@ circles.forEach((circle, index) => {
 });
 
 const getScroll = function () {
-	var wScrollY = ele.scrollTop;
+	var wScrollY = verticalCarousel.scrollTop;
 
 	carouselCard.forEach((card, index) => {
 		if (wScrollY === 0) {
@@ -104,15 +106,15 @@ const getScroll = function () {
 	});
 };
 
-const hide = function (id, tag) {
+const hide = function (id) {
 	id.forEach((tag) => {
 		tag.classList.remove("active");
 	});
 };
 
-ele.addEventListener("scroll", getScroll);
+verticalCarousel.addEventListener("scroll", getScroll);
 
-//Responsive
+//Responsive Menu
 const responsiveMenu = document.querySelector("#btn-responsive i");
 const menu = document.querySelector(".menu");
 const listMenu = document.querySelectorAll(".menu .list");
@@ -134,3 +136,55 @@ listMenu.forEach((list) => {
 		}, 100);
 	});
 });
+
+//Slick horizontal carousel
+$(".slick-slider").slick({
+	infinite: false,
+	// autoplay: true,
+	autoplaySpeed: 3000,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1000,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	],
+	arrows: true,
+	prevArrow: `<button type='button' class='btn-arrow slick-prev pull-left'><i class="fa-solid fa-angle-left"></i></button>`,
+	nextArrow: `<button type='button' class='btn-arrow slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
+});
+
+// OVERLAY
+TweenMax.to(".first", 1, {
+	delay: 0.3,
+	top: "-100%",
+	ease: Expo.easeInOut
+});
+
+TweenMax.to(".second", 1.5, {
+	delay: 0.5,
+	top: "-100%",
+	ease: Expo.easeInOut
+});
+
+TweenMax.to(".third", 1.5, {
+	delay: 0.7,
+	top: "-100%",
+	ease: Expo.easeInOut
+});
+
+
+setTimeout(() => {
+	document.querySelector("body,html").style.overflow = "auto";
+}, 1600);

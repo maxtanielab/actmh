@@ -58,7 +58,7 @@
   }
 }
 .cute-cats .buttons {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 @media (max-width: 450px) {
   .cute-cats .buttons {
@@ -100,7 +100,6 @@
 }
 .slick-slider .carousel-card {
   width: 340px;
-  height: 462px;
   background-color: #fff;
   border: 5px solid #e2f7fc;
   border-radius: 11px;

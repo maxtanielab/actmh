@@ -83,6 +83,7 @@
     height: 100vh;
     z-index: 99999;
     gap: 25px;
+    visibility: hidden;
   }
 }
 .nav .wrapper .menu.active {

@@ -1,8 +1,9 @@
-@import "./reset.less";
-@import "./nav.less";
-@import "./header.less";
-@import "./horizontal-carousel.less";
-@import "./footer.less";
+@import "./reset.css";
+@import "./loader.css";
+@import "./nav.css";
+@import "./header.css";
+@import "./horizontal-carousel.css";
+@import "./footer.css";
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto&family=Sansita+Swashed:wght@600&display=swap");
 
@@ -22,10 +23,13 @@ body,
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	overflow: hidden;
+	transition: overflow 2s linear;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	overflow: hidden !important;
 }
 
 // Default style
@@ -54,7 +58,7 @@ body {
 	flex-direction: row;
 }
 
-.container2 {
+.container-horizontal-carousel {
 	@media (max-width: 480px) {
 		max-width: 277px;
 	}
@@ -96,7 +100,7 @@ body {
 	gap: 30px;
 
 	@media (max-width: 768px) {
-		gap: 10px;
+		gap: 20px;
 	}
 }
 
