@@ -71,11 +71,12 @@ circles.forEach((circle, index) => {
 	circle.addEventListener("click", function () {
 		hide(carouselCard, "card");
 		carouselCard[index].classList.add("active");
-		hide(circles, circle);
-		this.classList.add("active");
 
+		hide(circles, circle);
+		circle.classList.add("active");
 		verticalCarousel.scroll({
-			top: carouselCard[index].offsetTop,
+			top:
+				carouselCard[index].offsetTop - carouselCard[index].offsetHeight + 64,
 			behavior: "smooth"
 		});
 	});
@@ -99,7 +100,8 @@ const getScroll = function () {
 			hide(circles, "circle");
 			circles[index].classList.add("active");
 
-			msg.innerHTML = `${catMsg[index].msg}`;
+			//Show cat msg by scroll and current index
+			msg.innerHTML = `${catMsg[wScrollY === 0 ? (index = 0) : index++].msg}`;
 		} else {
 			card.classList.remove("active");
 		}
