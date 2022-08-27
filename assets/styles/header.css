@@ -86,6 +86,18 @@
     height: 140px;
   }
 }
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .vertical-carousel {
+    width: 600px;
+    height: 760px;
+  }
+  .vertical-carousel .carousel-card {
+    height: 342px;
+  }
+  .vertical-carousel .carousel-card .imgs {
+    height: 290px;
+  }
+}
 .carousel-card.active {
   opacity: 1;
 }
@@ -176,14 +188,14 @@
   background-color: #07b4d9;
   padding: 40px;
 }
-@media (min-width: 1025px) and (max-width: 1180px) {
+@media (min-width: 1024px) and (max-width: 1180px) {
   .left-content {
     width: 50%;
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   .left-content {
-    height: 271px;
+    min-height: 271px;
     padding: 20px;
   }
 }
@@ -200,7 +212,7 @@
   background-color: #fff;
   padding: 140px 70px;
 }
-@media (min-width: 1025px) and (max-width: 1180px) {
+@media (min-width: 1024px) and (max-width: 1180px) {
   .right-content {
     width: 50%;
   }
@@ -284,5 +296,19 @@
 @media (max-width: 300px) {
   .right-content .title {
     font-size: 25px;
+  }
+}
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .right-content .title {
+    max-width: 600px;
+    font-size: 60px;
+  }
+  .right-content .cat-msg {
+    max-width: 100%;
+    width: 100%;
+    font-size: 25px;
+  }
+  .right-content .buttons {
+    margin-top: 50px;
   }
 }

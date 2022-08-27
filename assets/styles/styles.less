@@ -45,21 +45,33 @@ body {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 30px;
+
+	@media (min-width: 1980px) and (max-width: 2600px) {
+		gap: 45px;
+	}
 }
 
-.flex,
-.flex-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.flex {
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
 	flex-direction: row;
 }
 
+.flex-header {
+	@media (max-width: 1023px) {
+		display: flex;
+		flex-direction: column;
+	}
+	@media (min-width: 1024px) and (max-width: 3000px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
 .container-horizontal-carousel {
-	@media (min-width: 1025px) and (max-width: 1180px) {
+	@media (min-width: 1980px) and (max-width: 2600px) {
+		max-width: 600px;
+	}
+	@media (min-width: 1024px) and (max-width: 1180px) {
 		max-width: 375px;
 	}
 
@@ -85,19 +97,11 @@ body {
 	font-family: @sansitaFont;
 }
 
-@media (max-width: 1025px) {
-	.flex-header {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
-}
-
 .content-center {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .gap-30 {
@@ -122,6 +126,7 @@ body {
 	max-width: 1100px;
 }
 
+//TO CHANGED!!!!!!!!!!!!!!!!!!
 header {
 	.buttons {
 		@media (max-width: 480px) {
@@ -150,7 +155,13 @@ header {
 	text-transform: uppercase;
 	font-size: 14px;
 
-	@media (max-width: 768px) {
+	@media (min-width: 1980px) and (max-width: 2600px) {
+		width: 280px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 18px;
+	}
+	@media (min-width: 180px) and (max-width: 1281px) {
 		width: 171px;
 		height: 40px;
 		font-size: 11px;
@@ -251,4 +262,9 @@ header {
 .vr-scroll::-webkit-scrollbar,
 .hr-scroll::-webkit-scrollbar {
 	visibility: hidden;
+}
+
+.slick-slider .slick-disabled {
+	opacity: 0;
+	pointer-events: none;
 }

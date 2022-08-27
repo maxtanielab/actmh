@@ -55,17 +55,33 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-.flex,
-.flex-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .d-flex {
+    gap: 45px;
+  }
+}
+.flex {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
-@media (min-width: 1025px) and (max-width: 1180px) {
+@media (max-width: 1023px) {
+  .flex-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .container-horizontal-carousel {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1180px) {
   .container-horizontal-carousel {
     max-width: 375px;
   }
@@ -91,18 +107,11 @@ body {
 .sansitaFont {
   font-family: "Sansita Swashed";
 }
-@media (max-width: 1025px) {
-  .flex-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
 .content-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: center;
 }
 .gap-30 {
   gap: 30px;
@@ -149,7 +158,15 @@ body {
   text-transform: uppercase;
   font-size: 14px;
 }
-@media (max-width: 768px) {
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .btn {
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 180px) and (max-width: 1281px) {
   .btn {
     width: 171px;
     height: 40px;
@@ -240,4 +257,8 @@ body {
 .vr-scroll::-webkit-scrollbar,
 .hr-scroll::-webkit-scrollbar {
   visibility: hidden;
+}
+.slick-slider .slick-disabled {
+  opacity: 0;
+  pointer-events: none;
 }

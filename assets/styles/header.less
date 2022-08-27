@@ -95,6 +95,19 @@
 			}
 		}
 	}
+
+	@media (min-width: 1980px) and (max-width: 2600px) {
+		width: 600px;
+		height: 760px;
+
+		.carousel-card {
+			height: 342px;
+
+			.imgs {
+				height: 290px;
+			}
+		}
+	}
 }
 
 .carousel-card.active {
@@ -194,12 +207,12 @@
 	background-color: #07b4d9;
 	padding: 40px;
 
-	@media (min-width: 1025px) and (max-width: 1180px) {
+	@media (min-width: 1024px) and (max-width: 1180px) {
 		width: 50%;
 	}
 
 	@media (min-width: 481px) and (max-width: 1024px) {
-		height: 271px;
+		min-height: 271px;
 		padding: 20px;
 	}
 
@@ -219,7 +232,8 @@
 	// background-image: url("https://cdn.wallpapersafari.com/88/24/uqjWGB.jpg");
 	// background-repeat: no-repeat;
 	// background-size: cover;
-	@media (min-width: 1025px) and (max-width: 1180px) {
+
+	@media (min-width: 1024px) and (max-width: 1180px) {
 		width: 50%;
 
 		.gap-30 {
@@ -294,6 +308,22 @@
 
 		@media (max-width: 300px) {
 			font-size: 25px;
+		}
+	}
+
+	@media (min-width: 1980px) and (max-width: 2600px) {
+		.title {
+			max-width: 600px;
+			font-size: 60px;
+		}
+		.cat-msg {
+			max-width: 100%;
+			width: 100%;
+			font-size: 25px;
+		}
+
+		.buttons {
+			margin-top: 50px;
 		}
 	}
 }

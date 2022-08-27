@@ -142,13 +142,33 @@ listMenu.forEach((list) => {
 
 //Slick horizontal carousel
 $(".slick-slider").slick({
-	infinite: true,
+	infinite: false,
 	autoplay: true,
-	// variableWidth: true,
 	autoplaySpeed: 2000,
-	slidesToShow: 3,
+	slidesToShow: 7,
 	slidesToScroll: 1,
 	responsive: [
+		{
+			breakpoint: 3600,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 2100,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 1980,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
 		{
 			breakpoint: 1000,
 			settings: {
@@ -157,7 +177,7 @@ $(".slick-slider").slick({
 			}
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 540,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1
@@ -165,7 +185,7 @@ $(".slick-slider").slick({
 		}
 	],
 	arrows: true,
-	prevArrow: `<button type='button' class='btn-arrow slick-prev pull-left'><i class="fa-solid fa-angle-left"></i></button>`,
+	prevArrow: `<button type='button' class='btn-arrow slick-prev pull-left'><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>`,
 	nextArrow: `<button type='button' class='btn-arrow slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
 });
 

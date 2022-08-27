@@ -21,6 +21,11 @@
   text-align: center;
   margin-bottom: 62px;
 }
+@media (min-width: 1980px) and (max-width: 2600px) {
+  .cute-cats .sub-title {
+    font-size: 30px;
+  }
+}
 @media (max-width: 768px) {
   .cute-cats .sub-title {
     font-size: 20px;
@@ -64,7 +69,7 @@
 }
 @media (min-width: 321px) and (max-width: 768px) {
   .cute-cats .container {
-    margin-top: 277px;
+    margin-top: 257px;
   }
 }
 .cute-cats .buttons {
@@ -81,14 +86,19 @@
     align-items: center !important;
   }
 }
+@media (min-width: 280px) and (max-width: 768px) {
+  .cute-cats .buttons {
+    margin-top: 40px;
+  }
+}
 .slick-slider {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 1146px;
-  width: 90%;
+  width: 1280px;
+  width: 80%;
   margin-top: -210px;
 }
 @media (min-width: 481px) and (max-width: 1179px) {
@@ -114,6 +124,7 @@
   bottom: 280px;
 }
 .slick-slider .carousel-card {
+  width: 320px;
   background-color: #fff;
   border: 5px solid #e2f7fc;
   border-radius: 11px;
@@ -138,7 +149,7 @@
 }
 @media (max-width: 320px) {
   .slick-slider .carousel-card {
-    max-width: 280px;
+    max-width: inherit;
     width: 100%;
     padding: 15px;
     height: 388px;
