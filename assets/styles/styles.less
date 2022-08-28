@@ -4,6 +4,7 @@
 @import "./header.css";
 @import "./horizontal-carousel.css";
 @import "./footer.css";
+@import "./cookie-container.css";
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto&family=Sansita+Swashed:wght@600&display=swap");
 
@@ -122,12 +123,16 @@ body {
 	color: @lightOrange;
 }
 
+.blue {
+	color: @blueDark;
+}
+
 .wrapper {
 	max-width: 1100px;
 }
 
 //TO CHANGED!!!!!!!!!!!!!!!!!!
-header {
+#header {
 	.buttons {
 		@media (max-width: 480px) {
 			-webkit-box-orient: horizontal;
@@ -139,6 +144,15 @@ header {
 
 		@media (max-width: 319px) {
 			flex-direction: column;
+			margin-top: 30px;
+		}
+	}
+}
+
+#adopter-chat {
+	.buttons {
+		@media (min-width: 180px) and (max-width: 400px) {
+			flex-direction: column !important;
 			margin-top: 30px;
 		}
 	}
@@ -156,9 +170,9 @@ header {
 	font-size: 14px;
 
 	@media (min-width: 1980px) and (max-width: 2600px) {
-		width: 280px;
-		height: 60px;
-		line-height: 60px;
+		width: 238px;
+		height: 55px;
+		line-height: 55px;
 		font-size: 18px;
 	}
 	@media (min-width: 180px) and (max-width: 1281px) {

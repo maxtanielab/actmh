@@ -4,6 +4,7 @@
 @import "header.css";
 @import "horizontal-carousel.css";
 @import "footer.css";
+@import "cookie-container.css";
 @font-face {
   font-family: 'DM Serif Text';
   font-style: normal;
@@ -129,11 +130,14 @@ body {
 .orange {
   color: #f74e02;
 }
+.blue {
+  color: #0094b4;
+}
 .wrapper {
   max-width: 1100px;
 }
 @media (max-width: 480px) {
-  header .buttons {
+  #header .buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -142,8 +146,14 @@ body {
   }
 }
 @media (max-width: 319px) {
-  header .buttons {
+  #header .buttons {
     flex-direction: column;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 180px) and (max-width: 400px) {
+  #adopter-chat .buttons {
+    flex-direction: column !important;
     margin-top: 30px;
   }
 }
@@ -160,9 +170,9 @@ body {
 }
 @media (min-width: 1980px) and (max-width: 2600px) {
   .btn {
-    width: 280px;
-    height: 60px;
-    line-height: 60px;
+    width: 238px;
+    height: 55px;
+    line-height: 55px;
     font-size: 18px;
   }
 }

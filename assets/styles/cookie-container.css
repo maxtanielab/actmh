@@ -1,0 +1,69 @@
+.cookie-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(227, 101, 4, 0.573);
+  z-index: 9999999;
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+}
+.cookie-overlay .cookie-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: #fff;
+  padding: 40px 0;
+  padding-bottom: 0;
+  border-radius: 7px;
+  text-align: center;
+}
+.cookie-overlay .cookie-container img {
+  max-width: 50%;
+  margin: auto;
+  display: block;
+}
+.cookie-overlay .cookie-container .cookie-msg {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  color: #e84218e0;
+  font-size: 14px;
+}
+.cookie-overlay .cookie-container .controls-cookies {
+  width: 100%;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+}
+.cookie-overlay .cookie-container .controls-cookies .cookie-btn {
+  color: #f5f6fa;
+  width: 50%;
+  max-width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s linear;
+}
+.cookie-overlay .cookie-container .controls-cookies .cookie-btn:hover {
+  background-color: #0094b4 !important;
+  color: #fff !important;
+}
+.cookie-overlay .cookie-container .controls-cookies .cookie-btn#cookie-policy {
+  background-color: #fff;
+  color: #e84118;
+  border-radius: 0 0 0px 7px;
+}
+.cookie-overlay .cookie-container .controls-cookies .cookie-btn#cookie-btn {
+  background-color: #e84118;
+  color: #fff;
+  border-radius: 0px 0px 7px 0px;
+}
+@media (max-width: 480px) {
+  .cookie-overlay .cookie-container .flex {
+    flex-direction: column;
+  }
+}
+.cookie-overlay.active {
+  visibility: visible;
+}

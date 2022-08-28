@@ -2,21 +2,11 @@
 @blueDark: #0094b4;
 @sansitaFont: "Sansita Swashed";
 
-// Header
+// Vertical carousel
 .vertical-carousel {
 	width: 450px;
 	height: 580px;
 	padding: 20px;
-
-	// @media (max-width: 768px) {
-	// 	width: 430px;
-	// 	height: 275px;
-	// }
-
-	// @media (max-width: 480px) {
-	// 	width: 300px;
-	// 	height: 265px;
-	// }
 
 	/* Media Query for low resolution  Tablets, Ipads */
 	@media (min-width: 481px) and (max-width: 1179px) {
@@ -80,7 +70,6 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
 
 			@media (min-width: 481px) and (max-width: 1179px) {
 				height: 231px;
@@ -93,6 +82,22 @@
 			@media (max-width: 280px) {
 				height: 140px;
 			}
+		}
+
+		.header-vertical-carousel-img1 {
+			background-image: url("https://anipassion.com/ow_userfiles/plugins/base/3917-2.jpg");
+		}
+
+		.header-vertical-carousel-img2 {
+			background-image: url("https://jack35.files.wordpress.com/2014/11/86.jpg");
+		}
+
+		.header-vertical-carousel-img3 {
+			background-image: url("https://chouchoumag.fr/wp-content/uploads/2022/02/2.animaux-trisomiques.jpg");
+		}
+
+		.header-vertical-carousel-img4 {
+			background-image: url("https://animalaxy.fr/wp-content/uploads/2020/06/iStock-1202820953.jpg");
 		}
 	}
 
@@ -200,7 +205,7 @@
 // Left and right content
 
 // Header left content
-.left-content {
+.header-left-content {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
@@ -223,7 +228,7 @@
 }
 
 // Header right content
-.right-content {
+.header-right-content {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;

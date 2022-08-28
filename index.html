@@ -4,6 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://www.oneheart.fr/assets/media/img/favicon-16x16.png"
+			sizes="16x16"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://www.oneheart.fr/assets/media/img/favicon-32x32.png"
+			sizes="32x32"
+		/>
+		<title>Association des chats trop mignons handicapés</title>
+		<meta
+			name="description"
+			content="Association des chats trop mignons handicapés donne une seconde chance aux animaux handicapés par des dons et l'adoption."
+		/>
+		<meta property="og:site_name" content="actmh.org" />
+		<meta
+			property="og:title"
+			content="ACTMH - Association des chats trop mignons handicapés"
+		/>
+		<meta
+			property="og:description"
+			content="Association des chats trop mignons handicapés donne une seconde chance aux animaux handicapés par des dons et l'adoption."
+		/>
+		<meta property="og:type" content="website" />
+		<meta name="twitter:url" content="https://www.actmh.org/" />
+		<meta
+			name="twitter:title"
+			content="ACTMH - Association des chats trop mignons handicapés"
+		/>
+		<meta
+			name="twitter:description"
+			content="Association des chats trop mignons handicapés donne une seconde chance aux animaux handicapés par des dons et l'adoption."
+		/>
+		<meta
+			property="og:image"
+			content="https://st2.depositphotos.com/4398873/7554/v/600/depositphotos_75544575-stock-illustration-elegant-cat-logo.jpg"
+		/>
+		<meta property="og:image:width" content="900" />
+		<meta property="og:image:height" content="630" />
+
 		<!-- Css-->
 		<link
 			rel="stylesheet"
@@ -20,32 +63,32 @@
 		<script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 		<script defer src="assets/scripts/scripts.js"></script>
 
-		<!-- gsap -->
+		<!-- Gsap -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
 			integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
 			crossorigin="anonymous"
 		></script>
-		<title>Association des chats trop mignons handicapés</title>
 	</head>
 	<body>
 		<!--Loader-->
-		<div class="loader" id="loader">
+		<section id="loader">
 			<div class="overlay first"></div>
 			<div class="overlay second"></div>
 			<!-- <div class="overlay third">Mignon</div> -->
-		</div>
+		</section>
 
 		<!-- Nav -->
-		<nav id="nav" class="nav flex items-center content-center">
+		<nav id="nav" class="flex items-center content-center">
 			<div class="wrapper flex space-between">
 				<div class="logo">
-					<img
-						src="https://media.istockphoto.com/vectors/cute-cat-face-vector-id1132751982?k=20&m=1132751982&s=170667a&w=0&h=1eGiEmbcNp9sEiWmgifrUbcyNGCIJHawXrQJiZXir8U="
+					<a href="/"><img
+						src="./assets/images/actmh-logo.svg"
 						alt="logo d'un chat mignon et handicapé avec un main sur sa joue"
-					/>
+					/></a>
+				
 				</div>
-				<div class="responsive-menu" id="btn-responsive">
+				<div class="responsive-menu" id="responsive-menu">
 					<i class="fa-solid fa-bars"></i>
 				</div>
 				<ul class="menu flex gap-30">
@@ -67,40 +110,40 @@
 		</nav>
 
 		<!-- Header -->
-		<header class="main flex-header">
+		<header id="header" class="flex-header">
 			<!-- Left content -->
-			<div class="left-content flex content-center items-center content">
+			<div class="header-left-content flex content-center items-center">
 				<div
 					class="vertical-carousel d-flex items-center vr-scroll"
 					id="vertical-carousel"
 				>
 					<div class="carousel-card active">
-						<div class="imgs"></div>
+						<div class="imgs header-vertical-carousel-img1"></div>
 					</div>
 					<div class="carousel-card">
-						<div class="imgs"></div>
+						<div class="imgs header-vertical-carousel-img2"></div>
 					</div>
 					<div class="carousel-card">
-						<div class="imgs"></div>
+						<div class="imgs header-vertical-carousel-img3"></div>
 					</div>
 					<div class="carousel-card">
-						<div class="imgs"></div>
+						<div class="imgs header-vertical-carousel-img4"></div>
 					</div>
 				</div>
 
 				<!-- Controls -->
 				<div class="controls">
-					<div id="1" class="circle active">
+					<div class="circle active">
 						<i class="fa-solid fa-paw"></i>
 					</div>
-					<div id="2" class="circle"><i class="fa-solid fa-paw"></i></div>
-					<div id="3" class="circle"><i class="fa-solid fa-paw"></i></div>
-					<div id="4" class="circle"><i class="fa-solid fa-paw"></i></div>
+					<div class="circle"><i class="fa-solid fa-paw"></i></div>
+					<div class="circle"><i class="fa-solid fa-paw"></i></div>
+					<div class="circle"><i class="fa-solid fa-paw"></i></div>
 				</div>
 			</div>
 
 			<!-- Right content -->
-			<div class="right-content flex content-center content">
+			<div class="header-right-content flex content-center">
 				<div class="container-horizontal-carousel">
 					<p class="cat-msg" id="cat-msg">
 						Je suis Katy, j’ai 2 ans et je suis née aveugle, mais j’aime
@@ -114,7 +157,7 @@
 						<a href="" class="btn btn-fill"
 							>Faire un don <i class="fa-solid fa-heart"></i
 						></a>
-						<a href="" class="btn btn-stroke"
+						<a href="/" class="btn btn-stroke"
 							>Adopter un chat <i class="fa-solid fa-cat"></i
 						></a>
 					</div>
@@ -122,49 +165,55 @@
 			</div>
 		</header>
 
-		<main>
+		<!-- Main -->
+		<main id="main">
 			<section class="cute-cats" id="adopter-chat">
-				<h3 class="sub-title">
+				<h3 class="slogan">
 					Faire un don, c'est <b class="orange">m'aider</b>, m'adopter, c'est
 					<b class="orange">m'aimer</b>.
 				</h3>
 				<div class="container">
 					<div class="slick-slider">
-						<div class="carousel-card">
+						<!-- Carousel card 1 -->
+						<section class="carousel-card">
 							<div class="img img1"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
+								<span><b>Billie</b> 2ans</span>
 								<i class="fa-solid fa-venus orange"></i>
 							</div>
 							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
+								<p>Amputée suite à une chute</p>
 							</div>
 							<div class="buttons">
-								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i>
+								<a
+									href="https://www.facebook.com/AnimEgaux/photos/pcb.1140550089864050/1140546283197764"
+									class="btn btn-stroke-orange"
+									>Voir l'annonce
 								</a>
 							</div>
-						</div>
+						</section>
 
-						<div class="carousel-card">
+						<!-- Carousel card 2 -->
+						<section class="carousel-card">
 							<div class="img img2"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
-								<i class="fa-solid fa-venus orange"></i>
+								<span><b>Dan</b> 1an</span>
+								<i class="fa-solid fa-mars blue"></i>
 							</div>
 							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
+								<p>Aveugle de l'oeil droit</p>
 							</div>
 							<div class="buttons">
-								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
+								<a href="/" class="btn btn-stroke-orange"
+									>Voir l'annonce </a>
 							</div>
-						</div>
-						<div class="carousel-card">
+						</section>
+
+						<!-- Carousel card 3 -->
+						<section class="carousel-card">
 							<div class="img img3"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
+								<span><b>Mimi</b> 2ans</span>
 								<i class="fa-solid fa-venus orange"></i>
 							</div>
 							<div class="handicap-name">
@@ -172,86 +221,108 @@
 							</div>
 							<div class="buttons">
 								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
+									>Voir l'annonce</a>
 							</div>
-						</div>
-						<div class="carousel-card">
-							<div class="img img2"></div>
-							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
-								<i class="fa-solid fa-venus orange"></i>
-							</div>
-							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
-							</div>
-							<div class="buttons">
-								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
-							</div>
-						</div>
+						</section>
 
-						<div class="carousel-card">
-							<div class="img img1"></div>
+						<!-- Carousel card 4 -->
+						<section class="carousel-card">
+							<div class="img img4"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
-								<i class="fa-solid fa-venus orange"></i>
+								<span><b>Poppy</b> 1an</span>
+								<i class="fa-solid fa-mars blue"></i>
 							</div>
 							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
+								<p>Amputé des oreilles</p>
 							</div>
 							<div class="buttons">
 								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
+									>Voir l'annonce </a>
 							</div>
-						</div>
-						<div class="carousel-card">
-							<div class="img img3"></div>
+						</section>
+
+						<!-- Carousel card 5 -->
+						<section class="carousel-card">
+							<div class="img img5"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
+								<span><b>Cassy</b> 2ans</span>
 								<i class="fa-solid fa-venus orange"></i>
 							</div>
 							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
+								<p>Paralysée des jambes</p>
 							</div>
 							<div class="buttons">
 								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
+									>AVoir l'annonce</a>
 							</div>
-						</div>
-						<div class="carousel-card">
-							<div class="img img2"></div>
+						</section>
+
+						<!-- Carousel card 6 -->
+						<section class="carousel-card">
+							<div class="img img6"></div>
 							<div class="cat-description flex space-between">
-								<span><b>Kitty</b> 2ans</span>
+								<span><b>Winter</b> 3ans</span>
+								<i class="fa-solid fa-mars blue"></i>
+							</div>
+							<div class="handicap-name">
+								<p>Sensible des yeux</p>
+							</div>
+							<div class="buttons">
+								<a href="" class="btn btn-stroke-orange"
+									>Voir l'annonce</a>
+							</div>
+						</section>
+
+						<!-- Carousel card 7 -->
+						<section class="carousel-card">
+							<div class="img img7"></div>
+							<div class="cat-description flex space-between">
+								<span><b>Wiwie</b> 4ans</span>
 								<i class="fa-solid fa-venus orange"></i>
 							</div>
 							<div class="handicap-name">
-								<p>Aveugle des deux yeux</p>
+								<p>Trisomie 21</p>
 							</div>
 							<div class="buttons">
 								<a href="" class="btn btn-stroke-orange"
-									>Adopter Kitty <i class="fa-solid fa-cat"></i
-								></a>
+									>Voir l'annonce</a>
 							</div>
-						</div>
+						</section>
 					</div>
 				</div>
+
 				<div class="buttons flex column content-center gap-30">
 					<a href="" class="btn btn-fill"
 						>Faire un don <i class="fa-solid fa-heart"></i
 					></a>
-					<!-- <a href="" class="btn btn-stroke"
+					<a href="" class="btn btn-stroke"
 						>Découvrir nos chats <i class="fa-solid fa-cat"></i
-					></a> -->
+					></a>
 				</div>
 			</section>
 		</main>
 
+		<!-- Cookie overlay -->
+		<div class="cookie-overlay" id="cookie-overlay">
+			<div class="cookie-container">
+				<img
+					src="https://st4.depositphotos.com/2396765/27307/v/450/depositphotos_273077170-stock-illustration-cute-cat-eating-holding-cookie.jpg"
+					alt=""
+				/>
+				<p class="cookie-msg">
+					J'aime manger des cookies et je voudrais en partager avec toi, veux-tu
+					en avoir, afin de contrôler les contenus que tu veux activer ?
+				</p>
+
+				<div class="controls-cookies flex items-center">
+					<a href="" class="cookie-btn" id="cookie-policy">Notre politique</button>
+					<a href="" class="cookie-btn" id="cookie-btn">Accepter</button>
+				</div>
+			</div>
+		</div>
+
 		<!-- Footer -->
-		<footer class="footer">
+		<footer id="footer">
 			<ul class="menu-footer flex content-center gap-30">
 				<li><a href="/" class="nav-link-footer">&copy;2022 - ACTMH</a></li>
 				<li><a href="/" class="nav-link-footer">Mention légales</a></li>

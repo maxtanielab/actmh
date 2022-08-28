@@ -69,7 +69,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
 }
 @media (min-width: 481px) and (max-width: 1179px) {
   .vertical-carousel .carousel-card .imgs {
@@ -85,6 +84,18 @@
   .vertical-carousel .carousel-card .imgs {
     height: 140px;
   }
+}
+.vertical-carousel .carousel-card .header-vertical-carousel-img1 {
+  background-image: url("https://anipassion.com/ow_userfiles/plugins/base/3917-2.jpg");
+}
+.vertical-carousel .carousel-card .header-vertical-carousel-img2 {
+  background-image: url("https://jack35.files.wordpress.com/2014/11/86.jpg");
+}
+.vertical-carousel .carousel-card .header-vertical-carousel-img3 {
+  background-image: url("https://chouchoumag.fr/wp-content/uploads/2022/02/2.animaux-trisomiques.jpg");
+}
+.vertical-carousel .carousel-card .header-vertical-carousel-img4 {
+  background-image: url("https://animalaxy.fr/wp-content/uploads/2020/06/iStock-1202820953.jpg");
 }
 @media (min-width: 1980px) and (max-width: 2600px) {
   .vertical-carousel {
@@ -181,7 +192,7 @@
 .controls .circle:last-child:after {
   opacity: 0;
 }
-.left-content {
+.header-left-content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -189,23 +200,23 @@
   padding: 40px;
 }
 @media (min-width: 1024px) and (max-width: 1180px) {
-  .left-content {
+  .header-left-content {
     width: 50%;
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
-  .left-content {
+  .header-left-content {
     min-height: 271px;
     padding: 20px;
   }
 }
 @media (max-width: 480px) {
-  .left-content {
+  .header-left-content {
     padding: 12px;
     height: 285px;
   }
 }
-.right-content {
+.header-right-content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -213,27 +224,27 @@
   padding: 140px 70px;
 }
 @media (min-width: 1024px) and (max-width: 1180px) {
-  .right-content {
+  .header-right-content {
     width: 50%;
   }
-  .right-content .gap-30 {
+  .header-right-content .gap-30 {
     gap: 15px;
   }
-  .right-content .buttons {
+  .header-right-content .buttons {
     margin-top: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 1179px) {
-  .right-content {
+  .header-right-content {
     padding: 40px 20px;
   }
 }
 @media (max-width: 768px) {
-  .right-content {
+  .header-right-content {
     padding: 40px 20px;
   }
 }
-.right-content .cat-msg {
+.header-right-content .cat-msg {
   max-width: 437px;
   line-height: 1.5;
   color: #0094b4;
@@ -247,16 +258,16 @@
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media (max-width: 768px) {
-  .right-content .cat-msg {
+  .header-right-content .cat-msg {
     max-width: 350px;
   }
 }
 @media (max-width: 280px) {
-  .right-content .cat-msg {
+  .header-right-content .cat-msg {
     max-width: 100%;
   }
 }
-.right-content .title {
+.header-right-content .title {
   max-width: 456px;
   font-size: 45px;
   line-height: 1.3;
@@ -266,14 +277,14 @@
   color: #0094b4;
 }
 @media (min-width: 768px) and (max-width: 1179px) {
-  .right-content .title {
+  .header-right-content .title {
     font-size: 39px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  .right-content .title {
+  .header-right-content .title {
     max-width: 380px;
     font-size: 35px;
     margin-top: 30px;
@@ -282,33 +293,33 @@
   }
 }
 @media (max-width: 768px) {
-  .right-content .title {
+  .header-right-content .title {
     font-size: 30px;
     max-width: 390px;
     margin-top: 15px;
   }
 }
 @media (max-width: 320px) {
-  .right-content .title {
+  .header-right-content .title {
     font-size: 28px;
   }
 }
 @media (max-width: 300px) {
-  .right-content .title {
+  .header-right-content .title {
     font-size: 25px;
   }
 }
 @media (min-width: 1980px) and (max-width: 2600px) {
-  .right-content .title {
+  .header-right-content .title {
     max-width: 600px;
     font-size: 60px;
   }
-  .right-content .cat-msg {
+  .header-right-content .cat-msg {
     max-width: 100%;
     width: 100%;
     font-size: 25px;
   }
-  .right-content .buttons {
+  .header-right-content .buttons {
     margin-top: 50px;
   }
 }

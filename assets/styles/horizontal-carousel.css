@@ -1,5 +1,5 @@
 .cute-cats {
-  padding: 80px 0;
+  padding: 60px 0;
   background-color: #e1faff;
 }
 @media (min-width: 481px) and (max-width: 1179px) {
@@ -7,13 +7,13 @@
     padding: 50px 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .cute-cats {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 }
-.cute-cats .sub-title {
-  max-width: 90%;
+.cute-cats .slogan {
+  max-width: 80%;
   margin: auto;
   font-size: 25px;
   font-family: "Sansita Swashed";
@@ -22,22 +22,22 @@
   margin-bottom: 62px;
 }
 @media (min-width: 1980px) and (max-width: 2600px) {
-  .cute-cats .sub-title {
+  .cute-cats .slogan {
     font-size: 30px;
   }
 }
 @media (max-width: 768px) {
-  .cute-cats .sub-title {
+  .cute-cats .slogan {
     font-size: 20px;
   }
 }
 @media (max-width: 450px) {
-  .cute-cats .sub-title {
+  .cute-cats .slogan {
     font-size: 20px;
   }
 }
 @media (max-width: 320px) {
-  .cute-cats .sub-title {
+  .cute-cats .slogan {
     max-width: 241px;
     margin: auto;
     display: block;
@@ -56,20 +56,20 @@
   background: #f74e02;
   margin-top: 300px;
 }
-@media (min-width: 481px) and (max-width: 1179px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .cute-cats .container {
-    margin-top: 241px;
+    margin-top: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  .cute-cats .container {
+    margin-top: 163px;
+  }
+}
+@media (max-width: 540px) {
   .cute-cats .container {
     height: 209px;
-    margin-top: 215px;
-  }
-}
-@media (min-width: 321px) and (max-width: 768px) {
-  .cute-cats .container {
-    margin-top: 257px;
+    margin-top: 210px;
   }
 }
 .cute-cats .buttons {
@@ -97,22 +97,66 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1280px;
-  width: 80%;
+  width: 2500px;
+  max-width: 72%;
   margin-top: -210px;
 }
-@media (min-width: 481px) and (max-width: 1179px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .slick-slider {
-    margin-top: -173px;
+    margin-top: -166px;
   }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  .slick-slider {
+    margin-top: -104px;
+  }
+}
+@media (min-width: 180px) and (max-width: 540px) {
   .slick-slider {
     width: 100%;
+    max-width: 100%;
     margin-top: -250px;
   }
 }
-@media (max-width: 320px) {
+@media (min-width: 381px) and (max-width: 540px) {
+  .slick-slider {
+    max-width: 350px;
+  }
+}
+@media (min-width: 540px) and (max-width: 735px) {
+  .slick-slider {
+    max-width: 95%;
+  }
+}
+@media (min-width: 735px) and (max-width: 767px) {
+  .slick-slider {
+    max-width: 90%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1086px) {
+  .slick-slider {
+    max-width: 95%;
+  }
+}
+@media (min-width: 1086px) and (max-width: 1200px) {
+  .slick-slider {
+    width: 1200px;
+    max-width: 70%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1680px) {
+  .slick-slider {
+    max-width: 75%;
+    width: 1100px;
+  }
+}
+@media (min-width: 1680px) and (max-width: 1980px) {
+  .slick-slider {
+    width: 1100px;
+    max-width: 75%;
+  }
+}
+@media (max-width: 540px) {
   .slick-slider {
     width: 100%;
     margin-top: -178px;
@@ -121,7 +165,7 @@
 .slick-slider button {
   position: absolute;
   z-index: 999;
-  bottom: 280px;
+  top: 170px;
 }
 .slick-slider .carousel-card {
   width: 320px;
@@ -138,37 +182,52 @@
   height: 231px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   margin: 0;
 }
-@media (min-width: 481px) and (max-width: 1179px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  .slick-slider .carousel-card .img {
+    height: 169px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1280px) {
   .slick-slider .carousel-card {
-    margin: 0 10px;
+    margin: 0 7px;
     padding: 15px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .slick-slider .carousel-card {
-    max-width: inherit;
-    width: 100%;
+    max-width: 95%;
     padding: 15px;
-    height: 388px;
   }
   .slick-slider .carousel-card .img {
     height: 211px;
   }
 }
 .slick-slider .carousel-card .img1 {
-  background-image: url("https://cvlaval.com/sites/default/files/carousel/chat-1.jpg");
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/302003090_1140550169864042_2060165676764094361_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6MyxVRgIhUAX82ABEK&_nc_ht=scontent-cdg2-1.xx&oh=00_AT9GwTJhqg06VWQzBIQVj1TKgTDDBGKnbiU6trSfqY6qqg&oe=631165B7");
 }
 .slick-slider .carousel-card .img2 {
-  background-image: url("https://www.santevet.com/upload/admin/images/article/chaton%20adoption.jpg");
+  background-image: url("https://thumbs.dreamstime.com/b/jeune-chat-ginger-orange-tabby-avec-un-oeil-regardant-la-cam%C3%A9ra-%C3%A0-gingembre-sur-fond-de-fourrure-blanche-214394241.jpg");
+  background-position: left;
 }
 .slick-slider .carousel-card .img3 {
-  background-image: url("https://franc-info.com/wp-content/uploads/2022/03/260831505_129138119528928_1659459880283063327_n-e1648031165748.jpg");
+  background-image: url("https://upload.chatsdumonde.com/img_global/24-sante/_light-18633-vivre-avec-un-chat-aveugle-comment-faire-face-au-quotidien.jpg");
+  background-position: center;
 }
 .slick-slider .carousel-card .img4 {
-  background-image: url("https://miaustore.com/fr/wp-content/uploads/sites/2/2018/03/preview101.jpg");
+  background-image: url("https://www.ipnoze.com/wordpress/wp-content/uploads/2020/04/chat-sans-oreilles-adopte-potato-019.jpg");
+  background-position: center;
+}
+.slick-slider .carousel-card .img5 {
+  background-image: url("https://www.woopets.fr/assets/ckeditor/2018/dec/actualities/5577/originale/cat-in-a-wheelchair.jpg");
+}
+.slick-slider .carousel-card .img6 {
+  background-image: url("https://jardinage.lemonde.fr/images/dossiers/2018-12/chat-albinos-083758.jpg");
+}
+.slick-slider .carousel-card .img7 {
+  background-image: url("https://i.skyrock.net/9073/59469073/pics/2396626399_small_1.jpg");
 }
 .slick-slider .carousel-card .cat-description {
   margin-top: 25px;
@@ -220,32 +279,27 @@
   position: absolute;
   top: 170px;
 }
-@media (min-width: 481px) and (max-width: 1179px) {
-  .btn-arrow {
-    top: 140px;
-  }
-}
-@media (max-width: 320px) {
+@media (min-width: 280px) and (max-width: 768px) {
   .btn-arrow {
     width: 40px;
     height: 40px;
     font-size: 12px;
-    top: 158px;
+    top: 152px;
   }
 }
 .btn-arrow i {
   color: #0094b4;
 }
 .slick-prev {
-  left: -10px;
+  left: -12px;
 }
 @media (max-width: 768px) {
   .slick-prev {
-    left: 8px;
+    left: 10px;
   }
 }
 .slick-next {
-  right: -5px;
+  right: -8px;
 }
 @media (max-width: 768px) {
   .slick-next {

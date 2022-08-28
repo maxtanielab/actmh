@@ -46,9 +46,13 @@ verticalCarousel.addEventListener("mousedown", mouseDownHandler);
 
 /*=================== Carousel vertical card =================== */
 
-const carouselCard = document.querySelectorAll(".left-content .carousel-card");
+const carouselCard = document.querySelectorAll(
+	".header-left-content .carousel-card"
+);
 // let cardHeight = carouselCard[0].offsetHeight;
-const circles = document.querySelectorAll(".left-content .controls .circle");
+const circles = document.querySelectorAll(
+	".header-left-content .controls .circle"
+);
 let msg = document.getElementById("cat-msg");
 
 //Message of cats
@@ -118,7 +122,7 @@ const hide = function (id) {
 verticalCarousel.addEventListener("scroll", getScroll);
 
 //Responsive Menu
-const responsiveMenu = document.querySelector("#btn-responsive i");
+const responsiveMenu = document.querySelector("#responsive-menu i");
 const menu = document.querySelector(".menu");
 const listMenu = document.querySelectorAll(".menu .list");
 
@@ -170,7 +174,7 @@ $(".slick-slider").slick({
 			}
 		},
 		{
-			breakpoint: 1000,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1
@@ -189,7 +193,7 @@ $(".slick-slider").slick({
 	nextArrow: `<button type='button' class='btn-arrow slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
 });
 
-// OVERLAY
+// Overlay
 TweenMax.to(".first", 1, {
 	delay: 0.3,
 	top: "-150%",
@@ -207,6 +211,22 @@ TweenMax.to(".third", 1.5, {
 	top: "-150%",
 	ease: Expo.easeInOut
 });
+
+// Cookie Consent
+const cookieOverlay = document.querySelector("#cookie-overlay");
+const cookieButton = document.querySelector("#cookie-btn");
+
+cookieButton.addEventListener("click", () => {
+	cookieOverlay.classList.remove("active");
+	//Add the cookie banner in the localstorage
+	localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+	if (!localStorage.getItem("cookieBannerDisplayed")) {
+		cookieOverlay.classList.add("active");
+	}
+}, 2000);
 
 setTimeout(() => {
 	document.querySelector("body,html").style.overflow = "auto";
