@@ -21,7 +21,7 @@
   text-align: center;
   margin-bottom: 62px;
 }
-@media (min-width: 1980px) and (max-width: 2600px) {
+@media (min-width: 1980px) and (max-width: 2665px) {
   .cute-cats .slogan {
     font-size: 30px;
   }
@@ -91,7 +91,7 @@
     margin-top: 40px;
   }
 }
-.slick-slider {
+.cute-cats .slick-slider {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -102,72 +102,72 @@
   margin-top: -210px;
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .slick-slider {
-    margin-top: -166px;
+  .cute-cats .slick-slider {
+    margin-top: -146px;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     margin-top: -104px;
   }
 }
 @media (min-width: 180px) and (max-width: 540px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     width: 100%;
     max-width: 100%;
     margin-top: -250px;
   }
 }
 @media (min-width: 381px) and (max-width: 540px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     max-width: 350px;
   }
 }
 @media (min-width: 540px) and (max-width: 735px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     max-width: 95%;
   }
 }
 @media (min-width: 735px) and (max-width: 767px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     max-width: 90%;
   }
 }
 @media (min-width: 767px) and (max-width: 1086px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     max-width: 95%;
   }
 }
 @media (min-width: 1086px) and (max-width: 1200px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     width: 1200px;
     max-width: 70%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1680px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     max-width: 75%;
     width: 1100px;
   }
 }
 @media (min-width: 1680px) and (max-width: 1980px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     width: 1100px;
     max-width: 75%;
   }
 }
 @media (max-width: 540px) {
-  .slick-slider {
+  .cute-cats .slick-slider {
     width: 100%;
     margin-top: -178px;
   }
 }
-.slick-slider button {
+.cute-cats .slick-slider button {
   position: absolute;
   z-index: 999;
   top: 170px;
 }
-.slick-slider .carousel-card {
+.cute-cats .slick-slider .carousel-card {
   width: 320px;
   background-color: #fff;
   border: 5px solid #e2f7fc;
@@ -177,7 +177,7 @@
   margin: 0 20px;
   overflow: hidden;
 }
-.slick-slider .carousel-card .img {
+.cute-cats .slick-slider .carousel-card .img {
   width: 100%;
   height: 231px;
   background-size: cover;
@@ -186,77 +186,77 @@
   margin: 0;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-  .slick-slider .carousel-card .img {
+  .cute-cats .slick-slider .carousel-card .img {
     height: 169px;
   }
 }
 @media (min-width: 481px) and (max-width: 1280px) {
-  .slick-slider .carousel-card {
+  .cute-cats .slick-slider .carousel-card {
     margin: 0 7px;
     padding: 15px;
   }
 }
 @media (max-width: 540px) {
-  .slick-slider .carousel-card {
+  .cute-cats .slick-slider .carousel-card {
     max-width: 95%;
     padding: 15px;
   }
-  .slick-slider .carousel-card .img {
+  .cute-cats .slick-slider .carousel-card .img {
     height: 211px;
   }
 }
-.slick-slider .carousel-card .img1 {
-  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/302003090_1140550169864042_2060165676764094361_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6MyxVRgIhUAX82ABEK&_nc_ht=scontent-cdg2-1.xx&oh=00_AT9GwTJhqg06VWQzBIQVj1TKgTDDBGKnbiU6trSfqY6qqg&oe=631165B7");
+.cute-cats .slick-slider .carousel-card .img1 {
+  background-image: url("../images/billie-chatte-amputee.jpg");
 }
-.slick-slider .carousel-card .img2 {
-  background-image: url("https://thumbs.dreamstime.com/b/jeune-chat-ginger-orange-tabby-avec-un-oeil-regardant-la-cam%C3%A9ra-%C3%A0-gingembre-sur-fond-de-fourrure-blanche-214394241.jpg");
+.cute-cats .slick-slider .carousel-card .img2 {
+  background-image: url("../images/chat-aveugle-oeil-droit.jpg");
   background-position: left;
 }
-.slick-slider .carousel-card .img3 {
-  background-image: url("https://upload.chatsdumonde.com/img_global/24-sante/_light-18633-vivre-avec-un-chat-aveugle-comment-faire-face-au-quotidien.jpg");
+.cute-cats .slick-slider .carousel-card .img3 {
+  background-image: url("../images/chat-mignon-aveugle-deux-yeux.jpg");
   background-position: center;
 }
-.slick-slider .carousel-card .img4 {
-  background-image: url("https://www.ipnoze.com/wordpress/wp-content/uploads/2020/04/chat-sans-oreilles-adopte-potato-019.jpg");
+.cute-cats .slick-slider .carousel-card .img4 {
+  background-image: url("../images/chat-sans-oreille-droite.webp");
   background-position: center;
 }
-.slick-slider .carousel-card .img5 {
-  background-image: url("https://www.woopets.fr/assets/ckeditor/2018/dec/actualities/5577/originale/cat-in-a-wheelchair.jpg");
+.cute-cats .slick-slider .carousel-card .img5 {
+  background-image: url("../images/chat-paralyse-jambes-arrieres.jpg");
 }
-.slick-slider .carousel-card .img6 {
-  background-image: url("https://jardinage.lemonde.fr/images/dossiers/2018-12/chat-albinos-083758.jpg");
+.cute-cats .slick-slider .carousel-card .img6 {
+  background-image: url("../images/chat-albinos-yeux-bleu-orange-trop-mignon.jpg");
 }
-.slick-slider .carousel-card .img7 {
-  background-image: url("https://i.skyrock.net/9073/59469073/pics/2396626399_small_1.jpg");
+.cute-cats .slick-slider .carousel-card .img7 {
+  background-image: url("../images/chat-trisomique-grands-yeux.jpg");
 }
-.slick-slider .carousel-card .cat-description {
+.cute-cats .slick-slider .carousel-card .cat-description {
   margin-top: 25px;
   font-size: 20px;
 }
 @media (max-width: 320px) {
-  .slick-slider .carousel-card .cat-description {
+  .cute-cats .slick-slider .carousel-card .cat-description {
     font-size: 15px;
   }
 }
-.slick-slider .carousel-card .handicap-name {
+.cute-cats .slick-slider .carousel-card .handicap-name {
   margin-top: 10px;
   opacity: 1;
 }
 @media (max-width: 320px) {
-  .slick-slider .carousel-card .handicap-name {
+  .cute-cats .slick-slider .carousel-card .handicap-name {
     font-size: 15px;
   }
 }
-.slick-slider .carousel-card .buttons {
+.cute-cats .slick-slider .carousel-card .buttons {
   margin-top: 25px;
 }
 @media (min-width: 481px) and (max-width: 1179px) {
-  .slick-slider .carousel-card .buttons {
+  .cute-cats .slick-slider .carousel-card .buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 350px) {
-  .slick-slider .carousel-card .buttons {
+  .cute-cats .slick-slider .carousel-card .buttons {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
     -ms-flex-direction: column !important;
@@ -267,7 +267,7 @@
     margin-top: 15px;
   }
 }
-.btn-arrow {
+.cute-cats .btn-arrow {
   cursor: pointer;
   width: 58px;
   height: 58px;
@@ -279,30 +279,29 @@
   position: absolute;
   top: 170px;
 }
-@media (min-width: 280px) and (max-width: 768px) {
-  .btn-arrow {
+@media (min-width: 280px) and (max-width: 1280px) {
+  .cute-cats .btn-arrow {
     width: 40px;
     height: 40px;
     font-size: 12px;
-    top: 152px;
   }
 }
-.btn-arrow i {
+.cute-cats .btn-arrow i {
   color: #0094b4;
 }
-.slick-prev {
+.cute-cats .slick-prev {
   left: -12px;
 }
 @media (max-width: 768px) {
-  .slick-prev {
+  .cute-cats .slick-prev {
     left: 10px;
   }
 }
-.slick-next {
+.cute-cats .slick-next {
   right: -8px;
 }
 @media (max-width: 768px) {
-  .slick-next {
+  .cute-cats .slick-next {
     right: 8px;
   }
 }

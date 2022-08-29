@@ -1,10 +1,10 @@
 @import "reset.css";
-@import "loader.css";
 @import "nav.css";
 @import "header.css";
 @import "horizontal-carousel.css";
 @import "footer.css";
 @import "cookie-container.css";
+@import "scroll-to-top.css";
 @font-face {
   font-family: 'DM Serif Text';
   font-style: normal;
@@ -37,6 +37,8 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow: hidden;
+  -webkit-transition: overflow 2s linear;
+  -o-transition: overflow 2s linear;
   transition: overflow 2s linear;
 }
 body {
@@ -62,18 +64,33 @@ body {
   }
 }
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 @media (max-width: 1023px) {
   .flex-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (min-width: 1024px) and (max-width: 3000px) {
   .flex-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }
@@ -112,6 +129,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .gap-30 {
@@ -147,12 +166,18 @@ body {
 }
 @media (max-width: 319px) {
   #header .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 30px;
   }
 }
 @media (min-width: 180px) and (max-width: 400px) {
   #adopter-chat .buttons {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
     flex-direction: column !important;
     margin-top: 30px;
   }
@@ -187,6 +212,10 @@ body {
 .btn-fill {
   background-color: #f74e02;
   color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-fill:hover {
+  background-color: #0094b4;
 }
 .btn-stroke {
   position: relative;
@@ -260,7 +289,7 @@ body {
   overflow-y: hidden;
 }
 .vr-scroll {
-  cursor: url("https://www.pngmart.com/files/13/Christmas-Kitten-Transparent-Background.png"), 20px;
+  cursor: pointer;
   overflow: auto;
   overflow-x: hidden;
 }

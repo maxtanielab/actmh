@@ -1,14 +1,8 @@
 const verticalCarousel = document.getElementById("vertical-carousel");
-verticalCarousel.style.cursor =
-	'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
 
 let position = { top: 0, left: 0, x: 0, y: 0 };
 
 function mouseDownHandler(e) {
-	verticalCarousel.style.cursor =
-		'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
-	verticalCarousel.style.userSelect = "none";
-
 	position = {
 		// Get the current scrollLeft/Top
 		left: verticalCarousel.scrollLeft,
@@ -33,10 +27,6 @@ function mouseMoveHandler(e) {
 }
 
 function mouseUpHandler() {
-	verticalCarousel.style.cursor =
-		'url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto';
-	verticalCarousel.style.removeProperty("user-select");
-
 	document.removeEventListener("mousemove", mouseMoveHandler);
 	document.removeEventListener("mouseup", mouseUpHandler);
 }
@@ -55,19 +45,19 @@ const circles = document.querySelectorAll(
 );
 let msg = document.getElementById("cat-msg");
 
-//Message of cats
+// Cats msgs
 let catMsg = [
 	{
-		msg: "Je suis Katy, j’ai 2 ans et je suis née aveugle, mais j’aime beaucoup les câlins."
+		msg: "Je suis Katy, j’ai 2 ans je suis paralysée des mes deux jambes externes, mais je suis une fusée."
 	},
 	{
-		msg: "Je suis Pikky, j’ai 1 an et je suis atteinte du trisomie 21, mais je suis très souriante."
+		msg: "Je suis Pikky,j'ai 2 ans je suis aveugle de mes deux yeux, mais j'aime beaucoup les câlins."
 	},
 	{
-		msg: "Je suis Laurie, j’ai 2 ans et je suis née aveugle, mais j’aime beaucoup les câlins et les bisoux."
+		msg: "Je suis Billy, j’ai 3 ans je suis atteint du trisomie 21, mais j'aime beaucoup faire des grimaces."
 	},
 	{
-		msg: "Je suis Baba, j’ai 1 mois et je suis née aveugle, mais j’aime beaucoup les câlins et les bisoux."
+		msg: "Je suis Winter, j’ai 2 ans, je suis albinos et très sensible des yeux, mais j'aime beaucoup les caresses."
 	}
 ];
 
@@ -130,6 +120,7 @@ responsiveMenu.addEventListener("click", openResponsiveMenu);
 
 function openResponsiveMenu() {
 	menu.classList.toggle("active");
+	document.getElementById("responsive-menu").style.zIndex = "999999";
 	this.classList.toggle("fa-close");
 }
 
@@ -193,41 +184,43 @@ $(".slick-slider").slick({
 	nextArrow: `<button type='button' class='btn-arrow slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
 });
 
-// Overlay
-TweenMax.to(".first", 1, {
-	delay: 0.3,
-	top: "-150%",
-	ease: Expo.easeInOut
-});
-
-TweenMax.to(".second", 1.5, {
-	delay: 0.5,
-	top: "-150%",
-	ease: Expo.easeInOut
-});
-
-TweenMax.to(".third", 1.5, {
-	delay: 0.7,
-	top: "-150%",
-	ease: Expo.easeInOut
-});
-
 // Cookie Consent
-const cookieOverlay = document.querySelector("#cookie-overlay");
+const cookieConsent = document.querySelector("#cookie-consent");
 const cookieButton = document.querySelector("#cookie-btn");
 
 cookieButton.addEventListener("click", () => {
-	cookieOverlay.classList.remove("active");
+	cookieConsent.classList.remove("active");
 	//Add the cookie banner in the localstorage
 	localStorage.setItem("cookieBannerDisplayed", "true");
 });
 
 setTimeout(() => {
 	if (!localStorage.getItem("cookieBannerDisplayed")) {
-		cookieOverlay.classList.add("active");
+		cookieConsent.classList.add("active");
 	}
 }, 2000);
 
 setTimeout(() => {
 	document.querySelector("body,html").style.overflow = "auto";
 }, 1600);
+
+// Scroll to top button
+const scrollToTop = document.getElementById("scroll-to-top");
+window.onscroll = () => {
+	if (window.scrollY >= 150) {
+		scrollToTop.style.visibility = "visible";
+		scrollToTop.style.opacity = 1;
+	} else {
+		scrollToTop.style.visibility = "hidden";
+		scrollToTop.style.opacity = 0;
+	}
+};
+
+scrollToTop.addEventListener("click", scrollToTopBtn);
+
+function scrollToTopBtn() {
+	window.scroll({
+		top: 0,
+		behavior: "smooth"
+	});
+}

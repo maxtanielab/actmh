@@ -1,0 +1,24 @@
+#scroll-to-top {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: visibility 0s, opacity 0.5s ease-in;
+	-o-transition: visibility 0s, opacity 0.5s ease-in;
+	transition: visibility 0s, opacity 0.5s ease-in;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+
+	.top-button {
+		cursor: pointer;
+		border: none;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background-color: #f74e02;
+		border: 1px solid rgba(238, 238, 238, 0.536);
+		font-size: 15px;
+		color: #fff;
+	}
+}

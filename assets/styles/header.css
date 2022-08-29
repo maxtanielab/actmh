@@ -86,16 +86,16 @@
   }
 }
 .vertical-carousel .carousel-card .header-vertical-carousel-img1 {
-  background-image: url("https://anipassion.com/ow_userfiles/plugins/base/3917-2.jpg");
+  background-image: url("../images/chat-noir-paralysé-jambes-arrieres.jpg");
 }
 .vertical-carousel .carousel-card .header-vertical-carousel-img2 {
-  background-image: url("https://jack35.files.wordpress.com/2014/11/86.jpg");
+  background-image: url("../images/chat-aveugle-randoné.jpg");
 }
 .vertical-carousel .carousel-card .header-vertical-carousel-img3 {
-  background-image: url("https://chouchoumag.fr/wp-content/uploads/2022/02/2.animaux-trisomiques.jpg");
+  background-image: url("../images/chat-trisomique-tirant-la-langue.jpg");
 }
 .vertical-carousel .carousel-card .header-vertical-carousel-img4 {
-  background-image: url("https://animalaxy.fr/wp-content/uploads/2020/06/iStock-1202820953.jpg");
+  background-image: url("../images/chat-albinos-yeux-bleu-et-orange.jpg");
 }
 @media (min-width: 1980px) and (max-width: 2600px) {
   .vertical-carousel {

@@ -24,7 +24,7 @@
 		text-align: center;
 		margin-bottom: 62px;
 
-		@media (min-width: 1980px) and (max-width: 2600px) {
+		@media (min-width: 1980px) and (max-width: 2665px) {
 			font-size: 30px;
 		}
 		@media (max-width: 768px) {
@@ -67,13 +67,6 @@
 			height: 209px;
 			margin-top: 210px;
 		}
-
-		// @media (min-width: 768px) and (max-width: 1024px) {
-		// 	height: 200px;
-		// }
-		// @media (min-width: 370px) and (max-width: 768px) {
-		// 	margin-top: 257px;
-		// }
 	}
 
 	.buttons {
@@ -93,229 +86,211 @@
 			margin-top: 40px;
 		}
 	}
-}
 
-.slick-slider {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 2500px;
-	max-width: 72%;
-	margin-top: -210px;
+	.slick-slider {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 2500px;
+		max-width: 72%;
+		margin-top: -210px;
 
-	@media (min-width: 481px) and (max-width: 768px) {
-		margin-top: -166px;
-	}
-
-	@media (min-width: 768px) and (max-width: 1280px) {
-		margin-top: -104px;
-	}
-
-	@media (min-width: 180px) and (max-width: 540px) {
-		width: 100%;
-		max-width: 100%;
-		margin-top: -250px;
-	}
-	@media (min-width: 381px) and (max-width: 540px) {
-		max-width: 350px;
-	}
-
-	@media (min-width: 540px) and (max-width: 735px) {
-		max-width: 95%;
-	}
-
-	@media (min-width: 735px) and (max-width: 767px) {
-		max-width: 90%;
-	}
-
-	@media (min-width: 767px) and (max-width: 1086px) {
-		max-width: 95%;
-	}
-
-	@media (min-width: 1086px) and (max-width: 1200px) {
-		width: 1200px;
-		max-width: 70%;
-		// background: blue;
-	}
-
-	@media (min-width: 1200px) and (max-width: 1680px) {
-		max-width: 75%;
-		width: 1100px;
-	}
-
-	@media (min-width: 1680px) and (max-width: 1980px) {
-		width: 1100px;
-		max-width: 75%;
-		// background: #000;
-	}
-
-	@media (max-width: 540px) {
-		width: 100%;
-		margin-top: -178px;
-	}
-
-	// @media (min-width: 768px) {
-	// 	max-width: 1000px;
-	// }
-
-	// @media (max-width: 468px) {
-	// 	max-width: 450px;
-	// }
-
-	// @media (max-width: 320px) {
-	// 	max-width: 280px;
-	// 	margin-top: -179px;
-	// }
-
-	button {
-		position: absolute;
-		z-index: 999;
-		top: 170px;
-	}
-	.carousel-card {
-		width: 320px;
-		// height: 462px;
-		background-color: #fff;
-		border: 5px solid #e2f7fc;
-		border-radius: 11px;
-		padding: 30px;
-		color: @blueDark;
-		margin: 0 20px;
-		overflow: hidden;
-
-		.img {
-			width: 100%;
-			height: 231px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center top;
-			margin: 0;
-
-			@media (min-width: 768px) and (max-width: 1280px) {
-				height: 169px;
-			}
+		@media (min-width: 481px) and (max-width: 768px) {
+			margin-top: -146px;
 		}
 
-		@media (min-width: 481px) and (max-width: 1280px) {
-			margin: 0 7px;
-			padding: 15px;
+		@media (min-width: 768px) and (max-width: 1280px) {
+			margin-top: -104px;
+		}
+
+		@media (min-width: 180px) and (max-width: 540px) {
+			width: 100%;
+			max-width: 100%;
+			margin-top: -250px;
+		}
+		@media (min-width: 381px) and (max-width: 540px) {
+			max-width: 350px;
+		}
+
+		@media (min-width: 540px) and (max-width: 735px) {
+			max-width: 95%;
+		}
+
+		@media (min-width: 735px) and (max-width: 767px) {
+			max-width: 90%;
+		}
+
+		@media (min-width: 767px) and (max-width: 1086px) {
+			max-width: 95%;
+		}
+
+		@media (min-width: 1086px) and (max-width: 1200px) {
+			width: 1200px;
+			max-width: 70%;
+		}
+
+		@media (min-width: 1200px) and (max-width: 1680px) {
+			max-width: 75%;
+			width: 1100px;
+		}
+
+		@media (min-width: 1680px) and (max-width: 1980px) {
+			width: 1100px;
+			max-width: 75%;
 		}
 
 		@media (max-width: 540px) {
-			max-width: 95%;
-			padding: 15px;
+			width: 100%;
+			margin-top: -178px;
+		}
+		button {
+			position: absolute;
+			z-index: 999;
+			top: 170px;
+		}
+		.carousel-card {
+			width: 320px;
+			background-color: #fff;
+			border: 5px solid #e2f7fc;
+			border-radius: 11px;
+			padding: 30px;
+			color: @blueDark;
+			margin: 0 20px;
+			overflow: hidden;
 
 			.img {
-				height: 211px;
-			}
-		}
+				width: 100%;
+				height: 231px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center top;
+				margin: 0;
 
-		.img1 {
-			background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/302003090_1140550169864042_2060165676764094361_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6MyxVRgIhUAX82ABEK&_nc_ht=scontent-cdg2-1.xx&oh=00_AT9GwTJhqg06VWQzBIQVj1TKgTDDBGKnbiU6trSfqY6qqg&oe=631165B7");
-		}
-
-		.img2 {
-			background-image: url("https://thumbs.dreamstime.com/b/jeune-chat-ginger-orange-tabby-avec-un-oeil-regardant-la-cam%C3%A9ra-%C3%A0-gingembre-sur-fond-de-fourrure-blanche-214394241.jpg");
-			background-position: left;
-		}
-
-		.img3 {
-			background-image: url("https://upload.chatsdumonde.com/img_global/24-sante/_light-18633-vivre-avec-un-chat-aveugle-comment-faire-face-au-quotidien.jpg");
-			background-position: center;
-		}
-
-		.img4 {
-			background-image: url("https://www.ipnoze.com/wordpress/wp-content/uploads/2020/04/chat-sans-oreilles-adopte-potato-019.jpg");
-			background-position: center;
-		}
-
-		.img5 {
-			background-image: url("https://www.woopets.fr/assets/ckeditor/2018/dec/actualities/5577/originale/cat-in-a-wheelchair.jpg");
-		}
-
-		.img6 {
-			background-image: url("https://jardinage.lemonde.fr/images/dossiers/2018-12/chat-albinos-083758.jpg");
-		}
-
-		.img7 {
-			background-image: url("https://i.skyrock.net/9073/59469073/pics/2396626399_small_1.jpg");
-		}
-
-		.cat-description {
-			margin-top: 25px;
-			font-size: 20px;
-
-			@media (max-width: 320px) {
-				font-size: 15px;
-			}
-		}
-
-		.handicap-name {
-			margin-top: 10px;
-			opacity: 1;
-			@media (max-width: 320px) {
-				font-size: 15px;
-			}
-		}
-
-		.buttons {
-			margin-top: 25px;
-
-			@media (min-width: 481px) and (max-width: 1179px) {
-				margin-top: 15px;
+				@media (min-width: 768px) and (max-width: 1280px) {
+					height: 169px;
+				}
 			}
 
-			@media (max-width: 350px) {
-				-webkit-box-orient: vertical !important;
-				-webkit-box-direction: normal !important;
-				-ms-flex-direction: column !important;
-				flex-direction: column !important;
-				-webkit-box-align: center !important;
-				-ms-flex-align: center !important;
-				align-items: center !important;
-				margin-top: 15px;
+			@media (min-width: 481px) and (max-width: 1280px) {
+				margin: 0 7px;
+				padding: 15px;
+			}
+
+			@media (max-width: 540px) {
+				max-width: 95%;
+				padding: 15px;
+
+				.img {
+					height: 211px;
+				}
+			}
+
+			.img1 {
+				background-image: url("../images/billie-chatte-amputee.jpg");
+			}
+
+			.img2 {
+				background-image: url("../images/chat-aveugle-oeil-droit.jpg");
+				background-position: left;
+			}
+
+			.img3 {
+				background-image: url("../images/chat-mignon-aveugle-deux-yeux.jpg");
+				background-position: center;
+			}
+
+			.img4 {
+				background-image: url("../images/chat-sans-oreille-droite.webp");
+				background-position: center;
+			}
+
+			.img5 {
+				background-image: url("../images/chat-paralyse-jambes-arrieres.jpg");
+			}
+
+			.img6 {
+				background-image: url("../images/chat-albinos-yeux-bleu-orange-trop-mignon.jpg");
+			}
+
+			.img7 {
+				background-image: url("../images/chat-trisomique-grands-yeux.jpg");
+			}
+
+			.cat-description {
+				margin-top: 25px;
+				font-size: 20px;
+
+				@media (max-width: 320px) {
+					font-size: 15px;
+				}
+			}
+
+			.handicap-name {
+				margin-top: 10px;
+				opacity: 1;
+				@media (max-width: 320px) {
+					font-size: 15px;
+				}
+			}
+
+			.buttons {
+				margin-top: 25px;
+
+				@media (min-width: 481px) and (max-width: 1179px) {
+					margin-top: 15px;
+				}
+
+				@media (max-width: 350px) {
+					-webkit-box-orient: vertical !important;
+					-webkit-box-direction: normal !important;
+					-ms-flex-direction: column !important;
+					flex-direction: column !important;
+					-webkit-box-align: center !important;
+					-ms-flex-align: center !important;
+					align-items: center !important;
+					margin-top: 15px;
+				}
 			}
 		}
 	}
-}
 
-.btn-arrow {
-	cursor: pointer;
-	width: 58px;
-	height: 58px;
-	background: #ffffff;
-	border: 1px solid #e5e5e5;
-	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-	border-radius: 50px;
-	position: absolute;
-	top: 170px;
+	.btn-arrow {
+		cursor: pointer;
+		width: 58px;
+		height: 58px;
+		background: #ffffff;
+		border: 1px solid #e5e5e5;
+		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+		border-radius: 50px;
+		position: absolute;
+		top: 170px;
 
-	@media (min-width: 280px) and (max-width: 768px) {
-		width: 40px;
-		height: 40px;
-		font-size: 12px;
-		top: 152px;
+		@media (min-width: 280px) and (max-width: 1280px) {
+			width: 40px;
+			height: 40px;
+			font-size: 12px;
+		}
+
+		i {
+			color: @blueDark;
+		}
 	}
 
-	i {
-		color: @blueDark;
+	.slick-prev {
+		left: -12px;
+
+		@media (max-width: 768px) {
+			left: 10px;
+		}
 	}
-}
 
-.slick-prev {
-	left: -12px;
-
-	@media (max-width: 768px) {
-		left: 10px;
-	}
-}
-
-.slick-next {
-	right: -8px;
-	@media (max-width: 768px) {
-		right: 8px;
+	.slick-next {
+		right: -8px;
+		@media (max-width: 768px) {
+			right: 8px;
+		}
 	}
 }

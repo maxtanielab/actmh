@@ -5,7 +5,7 @@
   top: 0;
   padding: 20px 0;
   height: 70px;
-  z-index: 99;
+  z-index: 999999;
   background: #fff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -30,7 +30,7 @@
 }
 @media (max-width: 800px) {
   #nav .wrapper .logo img {
-    height: 45px;
+    width: 45px;
   }
 }
 #nav .wrapper .responsive-menu {
@@ -66,10 +66,10 @@
 }
 @media (max-width: 800px) {
   #nav .wrapper .menu {
-    position: absolute;
+    position: fixed;
     inset: 0;
-    top: 54px;
     padding: 20px 40px;
+    padding-top: 70px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
